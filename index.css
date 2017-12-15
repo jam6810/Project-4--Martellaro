@@ -1,0 +1,94 @@
+body{
+    background: black;
+    font-family: 'Bungee', cursive;
+    color: white;
+}
+
+#main {
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+}
+
+#main > article {
+    margin: 50px;
+    padding: 5px;
+    border: 4px ridge white;
+    background-image: url(https://www.robertspianos.com/images/commonmakes_up/Ritm%C3%BCller%20Piano111.jpg);
+    background-color: navy;
+    flex: 3 1 33%;
+    order: 1;
+}
+
+#main > nav {
+    margin: 50px;
+    padding: 5px;
+    border: 4px ridge white;
+    background-image: url(https://camo.githubusercontent.com/4ae0863d24e46a3f5eb4fff024b99140ae11188d/687474703a2f2f692e696d6775722e636f6d2f68426359564a392e706e673f31);
+    background-color: navy;
+    flex: 3 1 33%;
+    order: 2;
+}
+
+#main > aside {
+    margin: 50px;
+    padding: 5px;
+    border: 4px ridge white;
+    background-image: url(https://images.fineartamerica.com/images-medium-large/goffriller-violin-color-sam-hymas.jpg);
+    background-color: navy;
+    flex: 3 1 33%;
+    order: 3;
+}
+
+#main > main {
+    margin: 10px;
+    padding: 5px;
+    border: 4px ridge white;
+    background-color: navy;
+    flex: 3 1 33%;
+    order: 3;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background: navy;
+    border: 4px ridge white;
+    margin: 0 auto;
+    margin-top: -15%;
+}
+
+header, footer {
+    display: block;
+    margin: 4;
+    padding: 5px;
+    min-height: 100px;
+    border: 4px ridge white;
+    background: rgb(70, 70, 70);
+    text-align: center;
+}
+
+header{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+        order: 0;
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+    }
+}

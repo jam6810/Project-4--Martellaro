@@ -1,0 +1,26 @@
+body{
+    background: url(https://c.pxhere.com/photos/b3/a7/close_up_musical_instrument_string_instrument_strings_violin-960371.jpg!d);
+    background-size: cover;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    float: left;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: 'Bungee', cursive;
+}
+
+table{
+    width:300px;
+    height:300px;
+    position:fixed;
+    margin-left:-150px;
+    margin-top:-150px; 
+    top:50%;
+    left:50%;
+}
